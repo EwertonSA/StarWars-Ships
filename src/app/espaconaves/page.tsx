@@ -2,7 +2,6 @@
 import Link from "next/link"
 import spaceships from "../../data/spaceships.json"
 import styles from "../page.module.scss"
-import { Button } from "reactstrap"
 
 const Espaconaves= ()=>{
 return(
@@ -12,7 +11,7 @@ return(
 
   <div className={styles.naves}>
     {spaceships.map(ship=>(
-        <Link href={`/espaconaves/${ship.id}`} key={ship.id}><Button className={styles.btn}>{ship.name}</Button></Link>
+        <Link className={styles.btn} href={`/espaconaves/${ship.id}`} key={ship.id}>{ship.name}</Link>
     ))}
   </div>
     </div>

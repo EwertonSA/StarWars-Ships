@@ -2,7 +2,7 @@
 import Link from "next/link"
 import spaceship from "../../data/spaceships.json"
 import styles from "../page.module.scss"
-import { Button } from "reactstrap"
+
 
 const Categorias= ()=>{
     const categorySet= new Set(spaceship.map(ship=>ship.category))
@@ -16,13 +16,13 @@ return(
  
         {categoriesArray.map((category)=>(
             <div key={category}>
-                <Link href={`/categorias/${category.replace(' ','_')}`} ><Button className={styles.btn}>{category}</Button></Link>
+                <Link className={styles.btn} href={`/categorias/${category.replace(' ','_')}`} > {category}</Link>
             </div>
         ))}
  
-    </div>
+    </div>                                                                         
 </div>
     </main>
 )
 }
-export default Categorias
+export default Categorias 

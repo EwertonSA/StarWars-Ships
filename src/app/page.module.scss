@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: baseline;
+  background-color: black;
+  color: white;
+
   
 }
 .layout{
@@ -12,6 +15,7 @@
   align-items: center;
   justify-content: space-between;
   max-width: 800px;
+  background-color: black;
 }
 
 .nav{
@@ -19,19 +23,14 @@
  color: inherit;
  margin-right: 10px;
 }
-.button{
-  display: flex;
-  justify-content: baseline;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 10px;  
-  padding: 10px 60px 10px 10px;
-}
+
 .inicio{
 display: flex;
 justify-content: baseline;
 width: 800px;
 flex-direction: column;
+background-color: black;
+min-height: 100vh;
 }
 .title{
   font-size: 40px;
@@ -41,11 +40,13 @@ flex-direction: column;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap:10px
+  gap:10px;
+  color: white;
 }
 .btn{
-  width: 250px;
+  width: 200px;
   height: 35px;
+color: white;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 8px;
@@ -53,4 +54,5 @@ flex-direction: column;
   justify-content: baseline;
   align-items: center;
   padding: 20px;
+  text-decoration: none;
 }
