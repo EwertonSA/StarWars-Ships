@@ -3,7 +3,6 @@ import { useParams } from "next/navigation"
 import styles from "../../page.module.scss"
 import spaceships from "../../../data/spaceships.json"
 import Link from "next/link"
-import { Button } from "reactstrap"
 
 export default function Page(){
  
@@ -19,7 +18,7 @@ export default function Page(){
                 {categoryShips.map(ship=>(
                 
                   
-                    <Link  key={ship.id} href={`/espaconaves/${ship.id}`}><Button className={styles.btn}>{ship.name}</Button></Link>
+                    <Link className={styles.btn} key={ship.id} href={`/espaconaves/${ship.id}`}>{ship.name}</Link>
               
             ))}
        </div>

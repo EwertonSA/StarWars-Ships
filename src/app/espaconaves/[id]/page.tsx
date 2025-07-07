@@ -32,14 +32,14 @@ return(
        
        <div className={styles.layout}>
         
-     <Link className={styles.button} href="/espaconaves">Voltar para a página de espaço naves</Link>
+     <Link className={styles.btn} href="/espaconaves">Voltar para a página de espaço naves</Link>
        
-        <Link href={`/espaconaves/${+id -1}`} className={styles.button} style={{display:+id ===1 ? 'none':'block'}}>
+        <Link href={`/espaconaves/${+id -1}`} className={styles.btn} style={{display:+id ===1 ? 'none':'block'}}>
         Anterior
         
         </Link>
         
-        <Link href={`/espaconaves/${+id+1}`} className={styles.button} style={{display:+id === spaceships.length ? 'none':'block'}}>
+        <Link href={`/espaconaves/${+id+1}`} className={styles.btn} style={{display:+id === spaceships.length ? 'none':'block'}}>
         Próxima        
         </Link>
             </div> 
